@@ -78,6 +78,27 @@ public class MainActivity extends AppCompatActivity {
         textView2.setText(operand1 + operator + operand2);
 
       // Your code here, to diplay correct and incorrect options on the buttons
+      if(operator.equals("+")) {
+        correct_answer = operand1 + operand2;
+    }
+        else if (operator.equals("-")) {
+        correct_answer = operand1 - operand2;
+    }
+    else if (operator.equals("/")) {
+        correct_answer = operand1 / operand2;
+    }
+    else{
+        correct_answer= operand1*operand2;
+    }
+    if(correctButton == 0){
+        button1.setText(correct_answer + " ");
+        button2.setText(correct_answer + 1 + " ");
+        button3.setText(correct_answer + -1 + " ");
+        button4.setText(correct_answer + 2 + " ");
+    }  
+
+
+
 
         if(matchCounter==3){    // if three matches are completed updatee the perfomrance in sharedpreferences
 
