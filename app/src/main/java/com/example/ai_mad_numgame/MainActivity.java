@@ -96,6 +96,30 @@ public class MainActivity extends AppCompatActivity {
         button3.setText(correct_answer + -1 + " ");
         button4.setText(correct_answer + 2 + " ");
     }  
+    if(correctButton == 0){
+        button1.setText(correct_answer + " ");
+        button2.setText(correct_answer + 1 + " ");
+        button3.setText(correct_answer + -1 + " ");
+        button4.setText(correct_answer + 2 + " ");
+    }
+    if(correctButton == 1){
+        button2.setText(correct_answer + " ");
+        button1.setText(correct_answer + 1 + " ");
+        button3.setText(correct_answer + -1 + " ");
+        button4.setText(correct_answer + 2 + " ");
+    }
+    if(correctButton == 2){
+        button3.setText(correct_answer + " ");
+        button2.setText(correct_answer + 1 + " ");
+        button1.setText(correct_answer + -1 + " ");
+        button4.setText(correct_answer + 2 + " ");
+    }
+    if(correctButton == 3){
+        button4.setText(correct_answer + " ");
+        button2.setText(correct_answer + 1 + " ");
+        button3.setText(correct_answer + -1 + " ");
+        button1.setText(correct_answer + 2 + " ");
+    }
 
 
 
